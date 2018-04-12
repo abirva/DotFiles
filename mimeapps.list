@@ -1,0 +1,17 @@
+[Added Associations]
+application/x-compressed-tar=xarchiver.desktop;
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
+inode/directory=exo-file-manager.desktop
+x-scheme-handler/trash=exo-file-manager.desktop
+application/zip=xarchiver.desktop;
+image/jpeg=feh.desktop;nitrogen.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=abiword.desktop;
+application/vnd.openxmlformats-officedocument.presentationml.presentation=xarchiver.desktop;
+application/pdf=google-chrome.desktop;abiword.desktop;
+text/x-verilog=atom.desktop;
+image/png=feh.desktop;
+
+[Default Applications]
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=abiword.desktop
+application/pdf=google-chrome.desktop

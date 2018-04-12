@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.fullscreenweather.com/"
+      }
+   },
+   "description": "The world's most interactive and user-friendly weather map from Weather Underground has gone full screen.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPTlLj2iJbpvkEJDS8/8W0zFzsYQDNdeB4MSt+kaOEsqkM8fHdwj+ahegF+pinUkI7NPVTb6Eot9C9lG1W5yqC1gLsT+3miAu6Pe2y1n04G1a+R2IDIn40lFof2EQwFiBCr8l9QNtGnpf2rnJw6bG6uoHlsBdUyL5pAVvgM9+WjwIDAQAB",
+   "manifest_version": 2,
+   "name": "Full Screen Weather",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5"
+}

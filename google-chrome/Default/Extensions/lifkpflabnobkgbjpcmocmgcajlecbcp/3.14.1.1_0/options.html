@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html id="optionsV2" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lyrics Here by Rob W</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Lyrics Here by Rob W - See Lyrics at videos, Spotify and other music sites. Designed for Chrome, Firefox, Safari, Opera, Internet Explorer and Maxthon.">
+<link rel="canonical" href="https://robwu.nl/lyricshere/">
+<link rel="shortcut icon" type="image/png" href="icons/favicon.ico">
+<link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+<div id="top"></div>
+<div id="main">
+<div id="header">Lyrics Here <span class="hidden">by Rob W</span>
+<div id="header-note">See Lyrics at (un)known music videos and music streaming sites.</div>
+<div id="contents">&bull;
+<a href="#description">Description</a> &bull;
+<a href="#get-extension">Get the extension</a> &bull;
+<a href="#config">Configuration</a> &bull;
+<a href="#quick-guide">Guide</a> &bull;
+<a href="#contact">Contact</a> &bull;
+<a href="#sources">Sources</a> &bull;
+</div>
+</div>
+<section id="description">
+<h1>What?</h1>
+<p><strong>Lyrics Here</strong> (formerly called <em>YouTube Lyrics</em>) provides instant lyrics for
+  <a rel="nofollow" href="https://www.youtube.com/">YouTube</a>,
+  <a rel="nofollow" href="https://player.spotify.com/">Spotify Web Player</a>,
+  <a rel="nofollow" href="http://www.jango.com/">Jango</a>,
+  <a rel="nofollow" href="http://www.accuradio.com/">AccuRadio</a>,
+  <a rel="nofollow" href="https://www.deezer.com/">Deezer</a>,
+  <a rel="nofollow" href="http://8tracks.com/">8tracks</a>,
+  <a rel="nofollow" href="https://music.google.com">Google Music</a>,
+  <a rel="nofollow" href="http://www.iheart.com">iHeartRadio</a>,
+  <a rel="nofollow" href="http://www.superplayer.fm">Superplayer.fm</a>,
+  <a rel="nofollow" href="http://www.last.fm">Last.fm</a>,
+  <a rel="nofollow" href="http://music.yandex.ru">Yandex Music</a>,
+  <a rel="nofollow" href="http://play.qobuz.com">Qobuz</a>,
+  <a rel="nofollow" href="https://soundcloud.com">SoundCloud</a>,
+  <a rel="nofollow" href="http://www.saavn.com">Saavn</a>,
+  <a rel="nofollow" href="https://www.pandora.com">Pandora</a>,
+  <a rel="nofollow" href="https://bandcamp.com">Bandcamp</a>,
+  displayed in a <span title="You can drag, resize, toggle or close the panel whenever you want.">flexible panel</span>. Together with a link to the source and an option to look up the lyrics from another source (in the case that the displayed lyrics are incorrect). A search form allows for a manual search, even for different songs. When the song's lyrics cannot be found at any of the sources, a link to Google will be shown instead.
+</p>
+<a href="https://robwu.nl/lyricshere/screenshots" id="showScreenshots" class="button">Show screenshots</a>
+<h1>How?</h1>
+<p>When you open a <a title="http://www.youtube.com/watch?v=...">YouTube music video</a>, the Lyrics panel will show up. Some YouTube videos provide accurate information about the song's name and artist. When this data is available, it will be used to directly request the lyrics from one of the sources. Otherwise, a search based on the video title is run.</p>
+<p>On Spotify, Jango, AccuRadio, Deezer, 8tracks, Google Music, iHeartRadio, Superplayer.fm, Yandex Music, Qobuz, SoundCloud, Saavn, Pandora and Bandcamp, lyrics are looked up and displayed when a new song is played.</p>
+<p>If you don't want (instant) lyrics, head over to the <a href="#config">preferences</a> section and disable automatic display of the panel.</p>
+<input type="button" id="launch-demo" value="Launch demo">
+</section>
+<section id="get-extension">
+<!-- Last checked 22 Oct 2013, v3.7 -->
+<h1>Get the <em>Lyrics Here</em> extension</h1>
+This application is designed for a wide range of platforms:
+<ul>
+  <li><a class="icon chrome" href="https://chrome.google.com/webstore/detail/lyrics-here-by-rob-w/lifkpflabnobkgbjpcmocmgcajlecbcp">Google Chrome extension</a> in the Chrome Web Store.</li>
+  <li><a class="icon firefox" href="https://addons.mozilla.org/firefox/addon/youtube-lyrics-by-rob-w/">Firefox add-on</a> at addons.mozilla.org</li>
+  <li><a class="icon safari" href="https://robwu.nl/lyricshere/yt_lyrics.safariextz">Safari extension</a></li>
+  <li><a class="icon opera" href="https://addons.opera.com/en/extensions/details/youtube-lyrics-by-rob-w/">Opera extension</a> on addons.opera.com</li>
+  <li><a class="icon iexplore" href="https://robwu.nl/lyricshere/LyricsHereIE.msi" id="ie-extension" title="Lyrics Here for Internet Explorer (32 bits)">Internet Explorer extension (32-bit)</a> or <a href="https://robwu.nl/lyricshere/LyricsHereIE_x64.msi">64-bit</a> (IE 8 / 9 / 10 / 11)
+    <label class="toggle" for="toggle-ie-info">(toggle details)</label>
+    <input class="toggler" id="toggle-ie-info" type="checkbox">
+    <div>
+      <ol>
+        <li>Download and run <a href="https://robwu.nl/lyricshere/LyricsHereIE.msi">LyricsHereIE.msi</a> (or <a href="https://robwu.nl/lyricshere/LyricsHereIE_x64.msi">LyricsHereIE_x64.msi</a> for 64-bit systems).</li>
+        <li>After completing the installation, start Internet Explorer.</li>
+        <li>After a few seconds, the following dialog (<a href="https://robwu.nl/lyricshere/ie/ie9-bottom-notice.png" title="&quot;The 'Lyrics Here' add-on from 'Rob W' is ready for use.&quot;">screenshot</a>) appears at the bottom of your screen. Choose "Enable", and you're done!<br></li>
+        <li>If the notice does not appear, open the "Manage Add-ons" dialog (<a href="https://robwu.nl/lyricshere/ie/ie9-1-menu-entry.png">screenshot</a>) and enable the add-on (<a href="https://robwu.nl/lyricshere/ie/ie9-2-manage-addons.png">screenshot</a>).</li>
+        <li>Close and re-open this tab to activate the extension.</li>
+      </ol>
+    </div>
+  </li>
+  <li><a class="icon maxthon" href="http://extension.maxthon.com/detail/index.php?view_id=2462">Maxthon extension</a> at the Maxthon Extension Center</li>
+</ul>
+Support for Spotify was added in version 3.5.<br>
+Support for Jango was added in version 3.6.<br>
+Support for AccuRadio was added in version 3.7.<br>
+Support for Deezer and 8tracks was added in version 3.8.<br>
+Support for Google Music was added in version 3.9.<br>
+Support for iHeartRadio, Superplayer.fm and Last.fm was added in version 3.10<br>
+Support for Yandex Music, Qobuz, SoundCloud and Saavn was added in version 3.11<br>
+Support for Pandora was added in version 3.12<br>
+Support for Bandcamp was added in version 3.13<br>
+See also: <a href="https://robwu.nl/lyricshere/CHANGELOG">List of recent changes</a>.
+</section>
+<section id="config">
+<h1>Configuration</h1>
+<div id="config-source">You can change your preferences at this section after <a href="#get-extension">installing</a> the extension.</div>
+<div id="config-sites">
+  <h2>Where do you want to see lyrics?</h2>
+  Site-specific preferences can be set below. Sources can be configured <a href="#config">above</a>.
+</div>
+<div class="config-site-box" id="config-youtube">
+    <h2>YouTube</h2>
+    <div class="config-site-items">
+        <!-- Backwards compatibility -->
+        <div id="config-wmode"></div>
+        <div id="config-youtube-autolaunch">
+          Supported since the very first version. Guess why the extension was called "YouTube Lyrics by Rob W"?
+        </div>
+        <div id="config-youtube-theme"></div>
+    </div>
+</div>
+<div class="config-site-box" id="config-spotify">
+    <h2>Spotify</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.5#3.5">3.5</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-jango">
+    <h2>Jango</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.6#3.6">3.6</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-accuradio">
+    <h2>AccuRadio</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.7#3.7">3.7</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-deezer">
+    <h2>Deezer</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.8#3.8">3.8</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-8tracks">
+    <h2>8tracks</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.8#3.8">3.8</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-google-music">
+    <h2>Google Music</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.9#3.9">3.9</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-iheart">
+    <h2>iHeartRadio</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.10#3.10">3.10</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-superplayer">
+    <h2>Superplayer.fm</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.10#3.10">3.10</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-last.fm">
+    <h2>Last.fm</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.10#3.10">3.10</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-yandex-music">
+    <h2>Yandex Music</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.11#3.11">3.11</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-qobuz">
+    <h2>Qobuz</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.11#3.11">3.11</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-soundcloud">
+    <h2>SoundCloud</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.11#3.11">3.11</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-saavn">
+    <h2>Saavn</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.11#3.11">3.11</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-pandora">
+    <h2>Pandora</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.12#3.12">3.12</a>
+    </div>
+</div>
+<div class="config-site-box" id="config-bandcamp">
+    <h2>Bandcamp</h2>
+    <div class="config-site-items">
+      Since version <a href="https://robwu.nl/lyricshere/CHANGELOG?3.13#3.13">3.13</a>
+    </div>
+</div>
+</section>
+<section id="quick-guide">
+<h1>Quick guide</h1>
+<h2>Generic panel controls</h2>
+<p>The panel can be dragged, resized, toggled and closed.<br>
+Drag the title bar to drag the panel; double-click on the title bar to shrink the panel to minimum height. Double-click again to expand the contents again. 
+When the panel is closed via the close button, click on the icon to show it again. 
+Use the triangle in the bottom-left corner to resize the panel.</p>
+<h2>Fetching lyrics</h2>
+<p>When lyrics are fetched, the URL of the fetched resource is displayed. Some buttons (Retry, Abort, Next) are available to control the pending (network) request.</p>
+<h2>Searching</h2>
+<p>Type the artist's and song's name in the input field and press Enter (or hit the search button).<br>
+If you know the exact name, separate the artist and song by a dash for an optimized query, eg. "<em>artist name</em> - <em>song name</em>". An optimized query provides faster and more accurate lyrics.
+</p>
+<h2>Find and highlight lines in lyrics</h2>
+<p>Click on a line in the lyrics to highlight it (a visual aid to help you with keeping track of the lyrics).
+Use the left/right arrow key to highlight the previous/next line
+(only while the keyboard focus is at the lyrics, in which case a small border is drawn around the highlighted line).<br>
+Double-click on the lyrics to see a <strong>quick search box</strong>. You can immediately start
+typing, and the line matching the search term will automatically be shown and highlighted.
+</p>
+<h2 id="lyrics-in-new-window">Lyrics in separate window</h2>
+<p>
+<em>This feature is currently only available for Chrome, Opera and Firefox. Contact me if you use another browser and want this too.</em><br>
+Right-click on the "Lyrics Here" button in the browser toolbar, and click on "Open new lyrics window".
+There are two such options: "(any song)" and "(songs from this tab only)".
+With the "(any song)" option, the lyrics panel will show the lyrics for new songs from any tab;
+with the "(songs from this tab only)" option, the shown lyrics are only updated if the songs from the current tab changes.
+<br>
+Song detection is disabled when the lyrics panel in the tab is hidden;
+in other words, open the lyrics panel in the tab to automatically update the lyrics in the popped-out lyrics window.
+<br>
+Clicking the "T" button in the upper-right corner activates the tab whose lyrics have been shown most recently.
+</p>
+<h2 id="help-themes">Themes</h2>
+<p>By default, the lyrics panel has a light appearance. A dark theme is also available (ideal for listening to songs at night!).
+This dark theme can temporarily be toggled via the "Dark theme" checkbox,
+which shows up when the mouse pointer is hovering above the "Settings for Lyrics Here" link inside the "Info" box.
+<br>
+To permanently change the theme, got to the <a href="#config-sites">site-specific preferences</a> section and change the theme.
+This section also offers the ability to change the font size.
+</section>
+<a href="#contact" id="jump-to-contact">Contact &amp; Feedback</a>
+<section id="contact">
+<h1>Contact</h1>
+<p>Contact me if you want a new lyrics provider or see lyrics on other sites.<br>
+Please post a review if you like my extension (constructive negative feedback is also welcome).</p>
+<ul>
+<li>Email: <a href="mailto:rob@robwu.nl?subject=Lyrics%20Here">rob@robwu.nl</a></li>
+<li>Chrome: <a href="https://chrome.google.com/webstore/detail/lyrics-here-by-rob-w/lifkpflabnobkgbjpcmocmgcajlecbcp/reviews">Review form</a> in the Chrome Web Store</li>
+<li>Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/youtube-lyrics-by-rob-w/reviews/add">Review form</a> on addons.mozilla.org</li>
+<li>Opera: <a href="https://addons.opera.com/en/extensions/details/youtube-lyrics-by-rob-w/#feedback-container">Feedback form</a> on addons.opera.com</li>
+<li>Maxthon: <a href="http://extension.maxthon.com/detail/index.php?view_id=2462#comment">Rate and Review</a> in Maxthon's extension center.</li>
+</ul>
+<h2 id="social-share">Share</h2>
+<ul>
+<li><a class="icon facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frobwu.nl%2Flyricshere">Facebook</a></li>
+<li><a class="icon gplus" href="https://plus.google.com/share?url=https%3A%2F%2Frobwu.nl%2Flyricshere">Google+</a></li>
+<li><a class="icon twitter" href="https://twitter.com/share?url=https%3A%2F%2Frobwu.nl%2Flyricshere&amp;text=Instant%20Lyrics%20on%20many%20music%20sites!">Twitter</a></li>
+</ul>
+<h2 id="privacy">Privacy, performance &amp; security</h2>
+<p>I'm not collecting any user data. The extension has a small footprint and does not conflict with the pages it acts on.
+From external sources, only text (lyrics) will be displayed. The extension does not load any adverts, external scripts, trackers, etc.
+The extension sends at most one request at a time to prevent overloading the sites that provide lyrics.
+</p>
+</section>
+<section id="sources">
+<h1>Sources and acknowledgments</h1>
+All of the displayed lyrics are retrieved from external sources.<br>
+Head over to the <a href="#config">source configuration</a> section to see a description of each source.<br>
+Do you want another source to be added? <a href="#contact">Contact me</a>.<br>
+Do you want to disable a source? Go to the <a href="#config">configuration</a> section.
+<ul>
+<li><a href="http://lyrics.wikia.com/" rel="nofollow">Lyrics.wikia.com</a></li>
+<li><a href="http://www.lyrics.com/" rel="nofollow">Lyrics.com</a><!-- no star --></li>
+<li><a href="http://www.metrolyrics.com/" rel="nofollow">MetroLyrics.com</a></li>
+<li><a href="https://www.azlyrics.com/" rel="nofollow">AZLyrics.com</a><!-- no star --></li>
+<li><a href="http://www.lyricsmode.com/" rel="nofollow">LyricsMode.com</a></li>
+<li><a href="http://www.vagalume.com.br/" rel="nofollow" hreflang="pt">Vagalume.com.br</a></li>
+<li><a href="http://letras.mus.br/" rel="nofollow" hreflang="pt-BR">Letras.mus.br</a></li>
+<li><a href="http://www.lyricsmania.com/" rel="nofollow">LyricsMania.com</a></li>
+<li><a href="http://www.darklyrics.com/" rel="nofollow">DarkLyrics.com</a><!-- no star --></li>
+<li><a href="http://www.metal-archives.com/" rel="nofollow" hreflang="de">Metal-archives.com</a></li>
+<li><a href="http://www.musica.com/" rel="nofollow" hreflang="es">Musica.com</a></li>
+<li><a href="http://shironet.mako.co.il/" rel="nofollow" hreflang="he">Shironet.mako.co.il</a><!-- no star --></li>
+<li><a href="http://www.angolotesti.it/" rel="nofollow" hreflang="it">Angolotesti.it</a></li>
+<li><a href="http://www.paroles2chansons.com/" rel="nofollow" hreflang="fr">Paroles2chansons.com</a></li>
+<li><a href="http://genius.com/" rel="nofollow">Genius.com</a></li>
+<li><a href="http://www.tekstowo.pl/" rel="nofollow" hreflang="pl">Tekstowo.pl</a></li>
+<li><a href="http://www.animelyrics.com/" rel="nofollow">Animelyrics.com</a></li>
+<li><a href="http://mojim.com/" rel="nofollow">Mojim.com</a></li>
+<li><a href="http://songmeanings.com/" rel="nofollow">Songmeanings.com</a></li>
+<li><a href="http://songlyrics.com/" rel="nofollow">Songlyrics.com</a></li>
+<li><a href="http://www.songteksten.nl/" rel="nofollow" hreflang="nl">Songteksten.nl</a></li>
+<li><a href="http://www.stixoi.info/" rel="nofollow" hreflang="el-GR">Stixoi.info</a></li>
+<li><a href="http://www.plyrics.com/" rel="nofollow">PLyrics.com</a><!-- no star --></li>
+<li><a href="http://www.guitarparty.com/" rel="nofollow" title="Icelandic lyrics and guitar chords.">GuitarParty.com</a></li>
+<li><a href="http://www.lyrics.my/" rel="nofollow">Lyrics.my</a></li>
+<li><a href="http://www.lyricsmasti.com/" rel="nofollow">LyricsMasti.com</a></li>
+<li><a href="http://www.hindilyrics.net/" rel="nofollow">HindiLyrics.net</a></li>
+<li><a href="http://www.lyricsmint.com/" rel="nofollow">Lyricsmint.com</a></li>
+<li><a href="http://www.stlyrics.com/" rel="nofollow">STLyrics.com</a></li>
+<li><a href="http://www.newreleasetoday.com/" rel="nofollow">NewReleaseToday.com</a></li>
+<li><a href="http://www.karaoketexty.cz/" rel="nofollow" hreflang="cs">KaraokeTexty.cz</a></li>
+<li><a href="http://www.supermusic.sk/" rel="nofollow" hreflang="sk">Supermusic.sk</a></li>
+<li><a href="http://tekstove.info/" rel="nofollow" hreflang="bg">Tekstove.info</a></li>
+<li><a href="http://www.paadalvarigal.com/" rel="nofollow">PaadalVarigal.com</a></li>
+<li><a href="http://tamillyrics.hosuronline.com/" rel="nofollow">Tamillyrics.hosuronline.com</a></li>
+<li><a href="http://www.siamzone.com/" rel="nofollow" hreflang="th">SiamZone.com</a></li>
+<li><a href="http://www.songtexte.com/" rel="nofollow" hreflang="de">Songtexte.com</a></li>
+<li><a href="http://www.kpoplyrics.net/" rel="nofollow">KPopLyrics.net</a></li>
+<li><a href="http://www.lololyrics.com/" rel="nofollow">Lololyrics.com</a></li>
+<li><a href="http://gasazip.com/" rel="nofollow" hreflang="ko">Gasazip.com</a></li>
+<li><a href="http://versuri.ro/" rel="nofollow" hreflang="ro">Versuri.ro</a></li>
+<li><a href="http://coveralia.com/" rel="nofollow" hreflang="es">Coveralia.com</a></li>
+<li><a href="http://sarki.alternatifim.com/" rel="nofollow" hreflang="tr">Sarki.alternatifim.com</a></li>
+<li><a href="http://lirik.kapanlagi.com/" rel="nofollow" hreflang="id">Lirik.KapanLagi.com</a></li>
+<li><a href="http://www.song365.com/" rel="nofollow">Sing365.com</a></li>
+<li><a href="http://nashe.com.ua/" rel="nofollow" hreflang="uk">Nashe.com.ua</a></li>
+<li><a href="http://en.touhouwiki.net/" rel="nofollow">Touhouwiki.net</a></li>
+<li><a href="http://cmtv.com.ar/" rel="nofollow">cmtv.com.ar</a></li>
+<li><a href="http://tekstovi.net/" rel="nofollow">tekstovi.net</a></li>
+<li><a href="http://www.zeneszoveg.hu/" rel="nofollow">zeneszoveg.hu</a></li>
+<li><a href="http://www.flashlyrics.com/" rel="nofollow">flashlyrics.com</a></li>
+<li><a href="https://teksteshqip.com/" rel="nofollow">teksteshqip.com</a></li>
+<li>
+  <a href="https://www.bing.com/" rel="nofollow">Bing</a>
+  ,
+  <a href="https://www.google.com/" rel="nofollow">Google</a>
+  ,
+  <a href="https://search.yahoo.com/" rel="nofollow">Yahoo</a>
+  ,
+  <a href="https://duckduckgo.com/" rel="nofollow">DuckDuckGo</a>
+  ,
+  <a href="https://qwant.com/" rel="nofollow">Qwant</a>
+  ,
+  <a href="https://www.startpage.com" rel="nofollow">Startpage</a>
+  ,
+  <a href="https://www.ixquick.com" rel="nofollow">ixquick.com</a>
+  and
+  <a href="https://www.ixquick.eu" rel="nofollow">ixquick.eu</a>
+  may be used as search engines.
+</li>
+<li><a href="https://cors-anywhere.herokuapp.com/" rel="nofollow">CORS Anywhere</a> <em>Used in non-extension environments to enable requests.</em></li>
+</ul>
+<a href="https://www.youtube.com/" rel="nofollow">YouTube</a> is a trademark of Google Inc. Use of this trademark is subject to Google Permissions.
+</section>
+<div id="license">
+&copy; 2012 - 2018 Rob Wu &lt;rob@robwu.nl&gt;
+</div>
+</div>
+<a href="#top" title="Back to the top"><span id="to-top">&#8634;</span></a>
+<div style="position:fixed;top:0;left:0;width:1px;height:1px;padding:0;"><!-- Fixes (undocumented) Chrome (webkit?) bug (pos:fix in <a> magically overlays document when <select> is activated --></div>
+<!-- Obsolete items -->
+<div id="config-youtube-remember-position" style="display:none;"></div>
+<div id="config-grooveshark-remember-position" style="display:none;"></div>
+<div id="config-grooveshark-autolaunch" style="display:none;"></div>
+<div id="config-grooveshark-theme" style="display:none;"></div>
+<a id="showScreenshot" style="display:none;"></a>
+<script src="optional_origins.js"></script>
+<script src="yt_lyrics.js"></script>
+<script src="screenshots.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+2018/04/11-14:35:49.624 6210 Reusing MANIFEST /home/agoody77/.config/google-chrome/Default/IndexedDB/https_titan.service.amazonbrowserapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/04/11-14:35:49.625 6210 Recovering log #304
+2018/04/11-14:35:49.628 6210 Reusing old log /home/agoody77/.config/google-chrome/Default/IndexedDB/https_titan.service.amazonbrowserapp.com_0.indexeddb.leveldb/000304.log 
+2018/04/11-14:35:49.914 6210 Current memtable full; waiting...
+2018/04/11-14:35:49.914 6768 Level-0 table #309: started
+2018/04/11-14:35:49.939 6768 Level-0 table #309: 1016 bytes OK
+2018/04/11-14:35:49.990 6768 Delete type=0 #304
+2018/04/11-14:35:49.990 6768 Level-0 table #311: started
+2018/04/11-14:35:49.990 6768 Level-0 table #311: 0 bytes OK
+2018/04/11-14:35:50.082 6768 Delete type=0 #308
+2018/04/11-14:35:50.083 6768 Manual compaction at level-0 from '\x005\x00\x00\x00' @ 72057594037927935 : 1 .. '\x006\x00\x00\x00' @ 0 : 0; will stop at '\x005\x01\x02\x01\x01\x002' @ 10153 : 1
+2018/04/11-14:35:50.083 6768 Compacting 1@0 + 1@1 files
+2018/04/11-14:35:50.108 6768 Generated table #312@0: 33 keys, 1319 bytes
+2018/04/11-14:35:50.108 6768 Compacted 1@0 + 1@1 files => 1319 bytes
+2018/04/11-14:35:50.166 6768 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/04/11-14:35:50.167 6768 Delete type=2 #306
+2018/04/11-14:35:50.167 6768 Delete type=2 #309
+2018/04/11-14:35:50.167 6768 Manual compaction at level-0 from '\x005\x01\x02\x01\x01\x002' @ 10153 : 1 .. '\x006\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="File Manager" icon=""><action name="Execute"><command><![CDATA[thunar .]]></command></action></item>
+    <item label="Terminal" icon=""><action name="Execute"><command><![CDATA[urxvt]]></command></action></item>
+    <item label="Web Browser" icon="/usr/share/icons/Papirus-Dark/22x22/actions/web-browser.svg"><action name="Execute"><command><![CDATA[chrome http://]]></command></action></item>
+    <item label="Run command" icon="/usr/share/icons/Papirus-Dark/22x22/actions/system-run.svg"><action name="Execute"><command><![CDATA[gmrun]]></command></action></item>
+  <separator label="Categories"/>
+  <menu id="Accessories" icon="" label="Accessories">
+    <item label="About Xfce" icon=""><action name="Execute"><command><![CDATA[xfce4-about]]></command></action></item>
+    <item label="Atom" icon="/usr/share/icons/hicolor/256x256/apps/atom.png"><action name="Execute"><command><![CDATA[electron --app=/usr/lib/atom]]></command></action></item>
+    <item label="Bulk Rename" icon="/usr/share/icons/hicolor/128x128/apps/Thunar.png"><action name="Execute"><command><![CDATA[/usr/lib/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="compton" icon="/usr/share/icons/hicolor/scalable/apps/compton.svg"><action name="Execute"><command><![CDATA[compton --xrender-sync-fence]]></command></action></item>
+    <item label="File Manager" icon=""><action name="Execute"><command><![CDATA[exo-open --launch FileManager]]></command></action></item>
+    <item label="nitrogen" icon="/usr/share/icons/hicolor/22x22/apps/nitrogen.png"><action name="Execute"><command><![CDATA[nitrogen]]></command></action></item>
+    <item label="Terminal Emulator" icon=""><action name="Execute"><command><![CDATA[exo-open --launch TerminalEmulator]]></command></action></item>
+    <item label="Thunar File Manager" icon="/usr/share/icons/hicolor/128x128/apps/Thunar.png"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="Xarchiver" icon="/usr/share/icons/hicolor/scalable/apps/xarchiver.svg"><action name="Execute"><command><![CDATA[xarchiver]]></command></action></item>
+  </menu>
+  <menu id="Development" icon="" label="Development">
+    <item label="Atom" icon="/usr/share/icons/hicolor/256x256/apps/atom.png"><action name="Execute"><command><![CDATA[electron --app=/usr/lib/atom]]></command></action></item>
+    <item label="CMake" icon="/usr/share/icons/hicolor/128x128/apps/CMakeSetup.png"><action name="Execute"><command><![CDATA[cmake-gui]]></command></action></item>
+    <item label="Electron" icon="/usr/share/pixmaps/electron.png"><action name="Execute"><command><![CDATA[electron]]></command></action></item>
+    <item label="Qt Assistant" icon="/usr/share/icons/hicolor/128x128/apps/assistant.png"><action name="Execute"><command><![CDATA[assistant]]></command></action></item>
+    <item label="Qt Designer" icon="/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png"><action name="Execute"><command><![CDATA[designer]]></command></action></item>
+    <item label="Qt Linguist" icon="/usr/share/icons/hicolor/128x128/apps/linguist.png"><action name="Execute"><command><![CDATA[linguist]]></command></action></item>
+    <item label="Qt QDbusViewer" icon="/usr/share/icons/hicolor/128x128/apps/qdbusviewer.png"><action name="Execute"><command><![CDATA[qdbusviewer]]></command></action></item>
+  </menu>
+  <menu id="Games" icon="" label="Games">
+    <item label="Steam (Native)" icon="/usr/share/icons/hicolor/256x256/apps/steam.png"><action name="Execute"><command><![CDATA[/usr/bin/steam-native]]></command></action></item>
+    <item label="Steam (Runtime)" icon="/usr/share/icons/hicolor/256x256/apps/steam.png"><action name="Execute"><command><![CDATA[/usr/bin/steam-runtime]]></command></action></item>
+  </menu>
+  <menu id="Multimedia" icon="" label="Multimedia">
+    <item label="mpv Media Player" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg"><action name="Execute"><command><![CDATA[mpv --player-operation-mode=pseudo-gui --]]></command></action></item>
+    <item label="Qt V4L2 test Utility" icon="/usr/share/icons/hicolor/scalable/apps/qv4l2.svg"><action name="Execute"><command><![CDATA[qv4l2]]></command></action></item>
+  </menu>
+  <menu id="Network" icon="/usr/share/icons/Papirus-Dark/16x16/extra/clementine/applications-internet.svg" label="Network">
+    <item label="Avahi SSH Server Browser" icon="/usr/share/icons/Papirus-Dark/22x22/panel/network-wired.svg"><action name="Execute"><command><![CDATA[/usr/bin/bssh]]></command></action></item>
+    <item label="Avahi VNC Server Browser" icon="/usr/share/icons/Papirus-Dark/22x22/panel/network-wired.svg"><action name="Execute"><command><![CDATA[/usr/bin/bvnc]]></command></action></item>
+    <item label="FileZilla" icon="/usr/share/icons/hicolor/scalable/apps/filezilla.svg"><action name="Execute"><command><![CDATA[filezilla]]></command></action></item>
+    <item label="Google Chrome" icon="/usr/share/icons/hicolor/256x256/apps/google-chrome.png"><action name="Execute"><command><![CDATA[/usr/bin/google-chrome-stable]]></command></action></item>
+    <item label="Mail Reader" icon=""><action name="Execute"><command><![CDATA[exo-open --launch MailReader]]></command></action></item>
+    <item label="Steam (Native)" icon="/usr/share/icons/hicolor/256x256/apps/steam.png"><action name="Execute"><command><![CDATA[/usr/bin/steam-native]]></command></action></item>
+    <item label="Steam (Runtime)" icon="/usr/share/icons/hicolor/256x256/apps/steam.png"><action name="Execute"><command><![CDATA[/usr/bin/steam-runtime]]></command></action></item>
+    <item label="Web Browser" icon="/usr/share/icons/Papirus-Dark/22x22/actions/web-browser.svg"><action name="Execute"><command><![CDATA[exo-open --launch WebBrowser]]></command></action></item>
+  </menu>
+  <menu id="Office" icon="" label="Office">
+    <item label="AbiWord" icon="/usr/share/icons/hicolor/256x256/apps/abiword.png"><action name="Execute"><command><![CDATA[abiword]]></command></action></item>
+  </menu>
+  <menu id="Settings" icon="" label="Settings">
+    <item label="ARandR" icon=""><action name="Execute"><command><![CDATA[arandr]]></command></action></item>
+    <item label="Customize Look and Feel" icon=""><action name="Execute"><command><![CDATA[lxappearance]]></command></action></item>
+    <item label="Default Sound Card" icon=""><action name="Execute"><command><![CDATA[/usr/bin/asoundconf-gtk]]></command></action></item>
+    <item label="File Manager" icon=""><action name="Execute"><command><![CDATA[thunar-settings]]></command></action></item>
+    <item label="Network Connections" icon=""><action name="Execute"><command><![CDATA[nm-connection-editor]]></command></action></item>
+    <item label="Notifications" icon="/usr/share/icons/hicolor/48x48/apps/xfce4-notifyd.png"><action name="Execute"><command><![CDATA[xfce4-notifyd-config]]></command></action></item>
+    <item label="Openbox Configuration Manager" icon="/usr/share/pixmaps/obconf.png"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Pointing devices" icon=""><action name="Execute"><command><![CDATA[gpointing-device-settings]]></command></action></item>
+    <item label="Preferred Applications" icon="/usr/share/icons/hicolor/48x48/apps/preferences-desktop-default-applications.png"><action name="Execute"><command><![CDATA[exo-preferred-applications]]></command></action></item>
+    <item label="Screensaver" icon="/usr/share/pixmaps/xscreensaver.xpm"><action name="Execute"><command><![CDATA[xscreensaver-demo]]></command></action></item>
+    <item label="Tint2 Settings" icon="/usr/share/icons/hicolor/scalable/apps/tint2conf.svg"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+  </menu>
+  <menu id="System" icon="" label="System">
+    <item label="Add/Remove Software" icon="/usr/share/icons/hicolor/16x16/apps/system-software-install.png"><action name="Execute"><command><![CDATA[pamac-manager]]></command></action></item>
+    <item label="Avahi Zeroconf Browser" icon="/usr/share/icons/Papirus-Dark/22x22/panel/network-wired.svg"><action name="Execute"><command><![CDATA[/usr/bin/avahi-discover]]></command></action></item>
+    <item label="Bulk Rename" icon="/usr/share/icons/hicolor/128x128/apps/Thunar.png"><action name="Execute"><command><![CDATA[/usr/lib/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="Htop" icon="/usr/share/pixmaps/htop.png"><action name="Execute"><command><![CDATA[xterm -e 'htop']]></command></action></item>
+    <item label="ranger" icon=""><action name="Execute"><command><![CDATA[xterm -e 'ranger']]></command></action></item>
+    <item label="Software Update" icon=""><action name="Execute"><command><![CDATA[pamac-updater]]></command></action></item>
+    <item label="Thunar File Manager" icon="/usr/share/icons/hicolor/128x128/apps/Thunar.png"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="Tint2" icon="/usr/share/icons/hicolor/scalable/apps/tint2.svg"><action name="Execute"><command><![CDATA[tint2]]></command></action></item>
+    <item label="urxvt (client)" icon=""><action name="Execute"><command><![CDATA[urxvtc]]></command></action></item>
+    <item label="urxvt (tabbed)" icon=""><action name="Execute"><command><![CDATA[urxvt-tabbed]]></command></action></item>
+    <item label="urxvt" icon=""><action name="Execute"><command><![CDATA[urxvt]]></command></action></item>
+    <item label="UXTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
+    <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="Advanced Settings" icon="" label="Advanced Settings">
+    <item label="Conky RC" icon=""><action name="Execute"><command><![CDATA[geany ~/.conkyrc]]></command></action></item>
+    <item label="Tint2 Panel" icon=""><action name="Execute"><command><![CDATA[geany ~/.config/tint2/tint2rc]]></command></action></item>
+  <menu id="Obmenu-Generator" icon="" label="Obmenu-Generator">
+    <item label="Menu Schema" icon=""><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Menu Config" icon=""><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  <separator/>
+    <item label="Generate a static menu" icon=""><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+    <item label="Generate a static menu with icons" icon=""><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+  <separator/>
+    <item label="Generate a dynamic menu" icon=""><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+    <item label="Generate a dynamic menu with icons" icon=""><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+  <separator/>
+    <item label="Refresh Icon Set" icon="/usr/share/icons/Papirus-Dark/22x22/actions/gtk-refresh.svg"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+  </menu>
+  <menu id="Openbox" icon="/usr/share/pixmaps/openbox.png" label="Openbox">
+    <item label="Reconfigure Openbox" icon="/usr/share/pixmaps/openbox.png"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
+    <item label="Openbox Autostart" icon=""><action name="Execute"><command><![CDATA[geany ~/.config/openbox/autostart]]></command></action></item>
+    <item label="Openbox RC" icon=""><action name="Execute"><command><![CDATA[geany ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Openbox Menu" icon=""><action name="Execute"><command><![CDATA[geany ~/.config/openbox/menu.xml]]></command></action></item>
+  </menu>
+  </menu>
+  <separator/>
+    <item label="Lock" icon="/usr/share/icons/Papirus-Dark/22x22/actions/lock.svg"><action name="Execute"><command><![CDATA[xscreensaver-command -lock]]></command></action></item>
+    <item label="Exit" icon="/usr/share/icons/Papirus-Dark/22x22/actions/exit.svg"><action name="Exit"/></item>
+  </menu>
+</openbox_menu>

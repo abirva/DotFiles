@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>Permission request</title><style>
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: default;
+  text-align: center;
+  
+  /* Chrome 21+. */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+body.draw-attention {
+  -webkit-animation: draw-attention 222ms linear 0;
+  animation: draw-attention 222ms ease-in 0;
+}
+@-webkit-keyframes draw-attention {
+  66% { background-color: rgba(255, 166, 0, 0.4); }
+}
+@keyframes draw-attention {
+  66% { background-color: rgba(255, 166, 0, 0.4); }
+}
+h1 {
+  margin: 0 0 10px;
+  font-size: 120%;
+}
+h1 span {
+  color: #999;
+}
+.tip {
+  border-bottom: 1px dashed #333;
+  cursor: help;
+}
+#hint {
+  margin-bottom: 9px;
+}
+.type-site #hint-source,
+#hint-site {
+  display: none;
+}
+.type-site #hint-site {
+  display: block;
+}
+button {
+  min-height: 30px;
+  padding: 0 10px;
+}
+footer {
+  position: fixed;
+  bottom: 2px;
+  right: 2px;
+  left: 2px;
+}
+#opener {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.7em;
+  max-width: -webkit-calc(100% - 50px);
+  max-width: calc(100% - 50px);
+}
+#opener:not(:hover) {
+  border-color: #AAA;
+  color: #AAA;
+}
+#opener-pathname {
+  display: none;
+}
+#opener:hover #opener-pathname {
+  display: inline;
+}
+#visit-options {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: small;
+}
+</style></head><body>
+<h1>Lyrics Here <span>by Rob W</span></h1>
+<div id="hint">
+  <div id="hint-source">
+    Do you want to 
+    <span class="tip" title="In order to get lyrics from this site, the extension needs your permission to access its content.">allow Lyrics Here</span>
+    to access lyrics from <span class="identifier">this source</span>?
+  </div>
+  <div id="hint-site">
+      Do you want to activate Lyrics for <span class="identifier">this site</span>?
+  </div>
+</div>
+<div>
+  <button id="yes">Yes</button>
+  <button id="no" title="Close the dialog">No</button>
+  <button id="allow-all" title="Allows the extension to read data from all websites.
+    If you choose this option, you will never get a new permission request.">Allow all</button>
+</div>
+<footer>
+  <span class="tip" id="opener">
+    <span id="opener-origin"></span><span id="opener-pathname"></span>
+  </span>
+  <a href="https://robwu.nl/lyricshere/#config" target="_blank"
+    title="Visit options page to change the order of sources or enable new sites." id="visit-options">Options</a>
+</footer>
+<script src="optional_origins.js"></script>
+<script src="grant.js"></script>
+</body></html>

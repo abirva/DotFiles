@@ -1,0 +1,15 @@
+2018/04/11-14:35:44.158 6202 Reusing MANIFEST /home/agoody77/.config/google-chrome/Default/Extension State/MANIFEST-000001
+2018/04/11-14:35:44.158 6202 Recovering log #474
+2018/04/11-14:35:44.618 6202 Reusing old log /home/agoody77/.config/google-chrome/Default/Extension State/000474.log 
+2018/04/11-14:37:09.853 6964 Level-0 table #478: started
+2018/04/11-14:37:09.964 6964 Level-0 table #478: 3718259 bytes OK
+2018/04/11-14:37:10.007 6964 Delete type=0 #474
+2018/04/11-14:37:10.012 6964 Compacting 4@0 + 1@1 files
+2018/04/11-14:37:10.306 6964 Generated table #479@0: 17 keys, 26526 bytes
+2018/04/11-14:37:10.306 6964 Compacted 4@0 + 1@1 files => 26526 bytes
+2018/04/11-14:37:10.340 6964 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/04/11-14:37:10.340 6964 Delete type=2 #467
+2018/04/11-14:37:10.340 6964 Delete type=2 #470
+2018/04/11-14:37:10.341 6964 Delete type=2 #475
+2018/04/11-14:37:10.341 6964 Delete type=2 #472
+2018/04/11-14:37:10.342 6964 Delete type=2 #478

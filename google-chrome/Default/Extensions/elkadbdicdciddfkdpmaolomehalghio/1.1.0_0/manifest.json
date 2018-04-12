@@ -1,0 +1,20 @@
+{
+   "author": "Calum J. Eadie, regularWand and Tom D. Chambers",
+   "content_scripts": [ {
+      "css": [ "css/youtube-controls.css" ],
+      "js": [ "content-script.js" ],
+      "matches": [ "http://www.youtube.com/watch*", "https://www.youtube.com/watch*" ]
+   } ],
+   "description": "Watch YouTube™ videos frame by frame",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "48": "icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhpzTjqQSJ2RjxYyCL4LrVc8kLzGott0SsWlhtndexhTMifbE3eMI0hqw4OeW34hx5jFbX50m9sYSqsDgneTmXhn/+/+It+TpI8g9p3t9yxCM6nJWsppWphVbeLFFaQbQIPspPS0Hfkx8JGaOJaQi9b7sSikwB+V20Ro0wRXppgB4uBnoINv53E2w1nXSshrbkb3DRpKNC0kw5VgwPUnlSAEzouWC51Rne+0qZRgfP6ntNdsxEw5yw3jHcWYjeH9RDA6g6HWOLdXMJCTgK6JSTjNEXSmZrlTsE8h4cHz8kBRdbCErT/GnaQEtglEdZPQr/0869vK9ZXaAkYfUvzcBUQIDAQAB",
+   "manifest_version": 2,
+   "name": "Frame by Frame for YouTube™",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.0",
+   "web_accessible_resources": [ "frame-by-frame.js", "font/*" ]
+}
